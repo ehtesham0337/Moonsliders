@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --dark-color: #1f2937;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.title-head h1{
+   
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 10px 0;
+
+}
+
+p {
+    margin: 10px 0;
+}
+
+.logo-and-header img{
+    width: 60px;
+    height: 60px;
+}
+
+img {
+    width: 100%;
+    
+}
+
+/* navbar */
+
+.navbar{
+    background-color: var(--dark-color);
+    color:  #fff;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+
+.container{
+    margin: 0 auto;
+    overflow: auto;
+   
+}
+
+.title .logo-and-header {
+    /* max-width: 1100px; */
+    /*padding: 0 40px; */
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* position: relative; */
+}
+
+/* .logo-and-header > img:first-child {
+    opacity: 100%;
+} */
+
+.title {
+    /* max-width: 1100px; */
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    /* position: relative; */
+}
+
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    
+}
+
+.navbar a:hover{
+    border-bottom: 2px #fff solid;
+}
+
+
+/* Header */
+
+
+.showcase-container{
+    color: #333;
+    text-align: center;
+    
+    /* position: relative; */
+    /* backdrop-filter:50%; */
+   
+    
+}
+.img-text{
+    color: #fff;
+    max-width: 1100px;
+    font-size: 90px;
+    font-weight: 500;
+    position: absolute;
+    top:50%;
+    left:50%;
+    /* margin: 30px 50px; */
+    transform: translate(-50%, -100%);
+    background: linear-gradient(0deg, #000000c9  30%,/* #ffffff44 */ /* #4682B4 */ #3d5679ec 90%); 
+    border-radius: 25px;
+    
+}
+
+.showcase-container > img{
+    margin-top: -20px;
+    height:550px;
+
+    /* opacity: 0.9; */
+}
+
+
+.main__menu{
+    height: 300px;
+    margin: -25px 0;
+    background-color: #fff;
+    transform: skewY(-3deg);
+}
