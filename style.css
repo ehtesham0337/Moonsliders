@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 * {
     box-sizing: border-box;
     padding: 0;
@@ -7,11 +7,14 @@
 
 :root {
     --dark-color: #1f2937;
+    --dark-gray1: #12181b;
+    --light-gray1: #2a2e35;
+    --text-colour: #b2becd;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-    color: #333;
+    color: var(--text-colour);
     line-height: 1.6;
 }
 
@@ -27,8 +30,8 @@ a {
 }
 
 .title-head h1{
-   
-    font-weight: 500;
+    
+    font-weight: 200;
     line-height: 1.5;
     margin: 10px 0;
 
@@ -38,6 +41,8 @@ p {
     margin: 10px 0;
 }
 
+
+
 .logo-and-header img{
     width: 60px;
     height: 60px;
@@ -45,6 +50,7 @@ p {
 
 img {
     width: 100%;
+    
     
 }
 
@@ -57,6 +63,7 @@ img {
     width: 100%;
     position: fixed;
     z-index: 1;
+    background: linear-gradient(0deg, #00000088  30%, #1f2937 /*#4682B4 #3d5679ec*/ 100%)
 }
 
 
@@ -97,49 +104,173 @@ img {
     
 }
 
+.navbar ul li a::after{
+    content:'';
+    height: 2px;
+    background: #e63946;
+    width: 0%;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover::after{
+    width: 100%;
+    
+}
+
 .navbar a:hover{
-    border-bottom: 2px #fff solid;
+    
+    /* border-bottom: 2px #fff solid; */
 }
 
 
-/* Header */
+/* Showcase */
 
 
 .showcase-container{
     color: #333;
     text-align: center;
+    height: 500px;
+    
+    background: linear-gradient(0deg, #00000088  30%,#9e959531  100%),url(images/crop_rest.jpg); 
+    background-size: 100%, cover;
+    
     
     /* position: relative; */
     /* backdrop-filter:50%; */
-   
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%; */
     
 }
 .img-text{
+    
+    width: 100%;
     color: #fff;
     max-width: 1100px;
     font-size: 90px;
-    font-weight: 500;
+    font-weight: 400;
     position: absolute;
     top:50%;
     left:50%;
     /* margin: 30px 50px; */
-    transform: translate(-50%, -100%);
-    background: linear-gradient(0deg, #000000c9  30%,/* #ffffff44 */ /* #4682B4 */ #3d5679ec 90%); 
+    transform: translate(-50%, -80%);
+    /* background: linear-gradient(0deg, #000000b2  30%, #324155b7 90%);  */
     border-radius: 25px;
+    padding: 10px;
+    
+    background: linear-gradient(
+        to bottom,
+        hsla(214.86, 68.63%, 30%, 0.52) 0%,
+        hsla(214.86, 68.63%, 28.21%, 0.543) 0.6%,
+        hsla(214.86, 68.63%, 26.4%, 0.565) 1.5%,
+        hsla(214.86, 68.63%, 24.55%, 0.586) 2.9%,
+        hsla(214.86, 68.63%, 22.66%, 0.606) 4.9%,
+        hsla(214.86, 68.63%, 20.75%, 0.624) 7.7%,
+        hsla(214.86, 68.63%, 18.81%, 0.641) 11.3%,
+        hsla(214.86, 68.63%, 16.84%, 0.657) 15.8%,
+        hsla(214.86, 68.63%, 14.83%, 0.671) 21.4%,
+        hsla(214.86, 68.63%, 12.8%, 0.684) 28.2%,
+        hsla(214.86, 68.63%, 10.74%, 0.694) 36.3%,
+        hsla(214.86, 68.63%, 8.65%, 0.703) 45.8%,
+        hsla(214.86, 68.63%, 6.53%, 0.711) 56.8%,
+        hsla(214.86, 68.63%, 4.38%, 0.716) 69.4%,
+        hsla(214.86, 68.63%, 2.2%, 0.719) 83.8%,
+        hsla(0, 0%, 0%, 0.72) 100% );
+    
+
+    
+        /* linear-gradient(
+          to bottom,
+          hsla(215.17, 75.65%, 45.1%, 0.58) 0%,
+          hsla(215.17, 75.65%, 42.41%, 0.596) 0.6%,
+          hsla(215.17, 75.65%, 39.68%, 0.612) 1.5%,
+          hsla(215.17, 75.65%, 36.9%, 0.626) 2.9%,
+          hsla(215.17, 75.65%, 34.07%, 0.64) 4.9%,
+          hsla(215.17, 75.65%, 31.2%, 0.653) 7.7%,
+          hsla(215.17, 75.65%, 28.28%, 0.665) 11.3%,
+          hsla(215.17, 75.65%, 25.31%, 0.676) 15.8%,
+          hsla(215.17, 75.65%, 22.3%, 0.686) 21.4%,
+          hsla(215.17, 75.65%, 19.24%, 0.695) 28.2%,
+          hsla(215.17, 75.65%, 16.14%, 0.702) 36.3%,
+          hsla(215.17, 75.65%, 13%, 0.708) 45.8%,
+          hsla(215.17, 75.65%, 9.81%, 0.713) 56.8%,
+          hsla(215.17, 75.65%, 6.59%, 0.717) 69.4%,
+          hsla(215.17, 75.65%, 3.31%, 0.719) 83.8%,
+          hsla(0, 0%, 0%, 0.72) 100%
+        );
+       */
+}
+
+
+.img-para{
+    font-weight: 100;
+   font-size: 50px;
+   text-align: center;
+
+}
+
+
+/* MENU */
+
+.main__menu .container{
+    height: auto;
+}
+
+.main__menu .menu-header{
+    height: fit-content;
+    background-color: var(--dark-gray1);
+    display:flex;
+    flex-direction: column; 
+    align-items: center;
+    /* justify-content: center; */
+    font-size: 50px;
     
 }
 
-.showcase-container > img{
-    margin-top: -20px;
-    height:550px;
+.main__menu .menu-border{
+    
+    /* margin: auto; */
+    padding: 15px;
+    padding-bottom: 30px;
+    /* background-color: red; */
+    color: var(--text-colour);
+   
+}
+/* .main__menu .menu-img{
+    width: 150px;
+    justify-self: center;
+    color: #fff;
+    margin-left: 18%;
+} */
 
-    /* opacity: 0.9; */
+.fa-utensils {
+    margin-left: 75px;
+    
 }
 
+/* Appetizer */
+.menu-item h1{
+    font-weight: 600;
+    color: #03dac6;
+    text-align: center;
+    grid-column: 1 / 5;
+}
 
-.main__menu{
-    height: 300px;
-    margin: -25px 0;
-    background-color: #fff;
-    transform: skewY(-3deg);
+.grid {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.dish-apet {
+    padding: 10px;
+    margin: 10px;
+    color: var(--dark-gray1);
+    background-color: var(--text-colour);
+   
 }
