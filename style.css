@@ -254,11 +254,14 @@ img {
 }
 
 /* Appetizer */
+
 .menu-item h1{
-    font-weight: 600;
+    font-weight: 400;
     color: #03dac6;
     text-align: center;
     grid-column: 1 / 5;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 
 .grid {
@@ -268,9 +271,62 @@ img {
 }
 
 .dish-apet {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+    /* white-space: nowrap; */
+    /* flex-wrap: wrap; */
+    /* width:400px; */
+    height: 500px;
+    font-size: 20px;
     padding: 10px;
-    margin: 10px;
+    margin: 25px;
+    
     color: var(--dark-gray1);
     background-color: var(--text-colour);
-   
+    border-radius: 10px;
+    /* border-bottom: 2px #e63946 solid; */
+    box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.308) ;
+    /* text-align: center; */
+}
+
+.dish-apet .apet-text {
+    display: flex;
+    flex-direction: column;
+    
+    height: 300px;
+    
+
+    
+}
+.dish-apet .apet-img{
+    height: 200px;
+ 
+}
+
+.dish-apet img{
+    height: 200px;
+}
+.dish-apet h3{
+    margin-top: 0;;
+}
+
+.dish-apet .price{
+    align-self: flex-end;
+    margin-top: auto;
+    /* margin: 10px; */
+    
+    
+}
+
+.dish-apet p {
+    font-weight: 500;
+    
+}
+
+.caeser-salad{
+    grid-column: 2 / 3;
 }
