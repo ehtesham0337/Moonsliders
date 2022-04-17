@@ -330,3 +330,8 @@ img {
 .caeser-salad{
     grid-column: 2 / 3;
 }
+
+.about .container{
+    height: 300px;
+    background-color: var(--light-gray1);
+}
