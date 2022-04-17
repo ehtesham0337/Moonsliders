@@ -3,6 +3,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -10,6 +11,7 @@
     --dark-gray1: #12181b;
     --light-gray1: #2a2e35;
     --text-colour: #b2becd;
+    --prim-head: #03dac6;
 }
 
 body {
@@ -50,6 +52,7 @@ p {
 
 img {
     width: 100%;
+    border-radius: 10px;
     
     
 }
@@ -222,13 +225,14 @@ img {
 }
 
 .main__menu .menu-header{
-    height: fit-content;
+    height: auto;
     background-color: var(--dark-gray1);
     display:flex;
     flex-direction: column; 
     align-items: center;
     /* justify-content: center; */
     font-size: 50px;
+    
     
 }
 
@@ -249,19 +253,23 @@ img {
 } */
 
 .fa-utensils {
-    margin-left: 75px;
-    
+    margin-left: 75px;  
 }
 
 /* Appetizer */
+.menu-item{
+    padding-bottom: 10px;
+    /* border-bottom: 2px var(--light-gray1) dashed; */
+}
 
 .menu-item h1{
     font-weight: 400;
-    color: #03dac6;
+    color: var(--prim-head);
     text-align: center;
     grid-column: 1 / 5;
     margin-top: 40px;
     margin-bottom: 10px;
+    
 }
 
 .grid {
@@ -331,7 +339,83 @@ img {
     grid-column: 2 / 3;
 }
 
+.menu-border{
+
+    padding: 50px;
+}
+
+
+/* About Us */
+
 .about .container{
-    height: 300px;
+    padding: 50px;
+
+    margin: auto;
+    height:auto;
+    background-color: var(--dark-gray1);
+    border-top: 2px var(--light-gray1) dashed;
+}
+
+.about-card {
+    /* height: 400px;
+    width: 500px; */
+    align-content: center;
+    justify-content: center;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    color: var(--dark-gray1);
+    background-color: var(--text-colour);
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.308) ;
+    padding: 20px;
+  
+    margin: 20px;
+    color: var(--text-colour);
     background-color: var(--light-gray1);
+    
+}
+
+.about-card0 {
+    /* height: 400px;
+    width: 500px; */
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    color: var(--dark-gray1);
+    background-color: var(--text-colour);
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.308) ;
+    padding: 20px;
+    
+    color: var(--text-colour);
+    background-color: var(--light-gray1);
+    
+}
+
+.about-card h2{
+    color: var(--prim-head);
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.about-text {
+    color: var(--text-colour);
+}
+
+.about-border{
+    height: auto;
+    background-color: var(--dark-gray1);
+    display:flex;
+    flex-direction: column; 
+    align-items: center;
+    font-size: 50px;
+    grid-column: 1 / 5;
+}
+
+.about-control{
+
+}
+
+.abt-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
