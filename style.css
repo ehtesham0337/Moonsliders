@@ -294,6 +294,11 @@ img {
     /* border-bottom: 2px #e63946 solid; */
     box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.308) ;
     /* text-align: center; */
+    transition: transform 0.2s ease-in;
+}
+
+.dish-apet:hover {
+    transform: translateY(-15px);
 }
 
 .dish-apet .apet-text {
