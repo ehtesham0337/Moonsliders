@@ -685,9 +685,13 @@ img {
         transform: none;
     }
 
+    .navbar .container,
+    .showcase-container,
+    .menu-container,
     .about .container,
     .contact .container {
-        width: 752px;
+        /* width: 752px; */
+        width: 100%;
         
     }
 
@@ -696,7 +700,7 @@ img {
         order: 1;
         align-self: center;
         text-align: center;
-        width: 550px;
+        width: 530px;
     }
 
     .about-text h1 {
