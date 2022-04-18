@@ -827,7 +827,7 @@ img {
     }
 
     .about-border {
-        margin-left: -40px;
+        margin-left: -65px;
     }
 
     .about-text {
@@ -839,7 +839,7 @@ img {
         /* text-align: center; */
         width: 320px;
         font-size: 15px;
-        margin-left: 15px;
+        margin-left: -28px;
         
     }
 
@@ -854,11 +854,11 @@ img {
         align-self: center;
         justify-self: center;
         width: 300px;
-        margin-left: -18px;        
+        margin-left: -48px;        
     }
 
     .contact h1{
-        margin-left: 30px
+        margin-left: 10px
     }
 
     .map {
@@ -871,6 +871,7 @@ img {
         padding: 0;
         width: 400px;
         font-size: 14px;
+        margin-left:-20px;
         /* align-items:flex-start ; */
         
     }
@@ -880,15 +881,19 @@ img {
     }
 
     .contact .about-card {
-        margin-left: 19px;
+        margin-left: -19px;
     }
 
     .contact-map {
         /* display: flex; */
         margin: 0;
         padding: 0;
-        margin-left: -40px;
+        margin-left: -60px;
         width: 350px;
+    }
+
+    .copyright {
+        width: 450px;
     }
 
 }
